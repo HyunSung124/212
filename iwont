@@ -1,0 +1,9 @@
+#길이가 5인 정사각형의 네 꼭짓점
+#matrix[x][y], matrix[x+4][y], matrix[x][y+4], matrix[x+4][y+4]
+n, m = map(int, input().split())
+matrix = []
+for i in range(n):
+    tmp = list(map(int, list(input())))
+    matrix.append(tmp)
+    for j in matrix:
+전에 위험지역을했던것 처럼 for 문을통해 4각형을 만들어 본다
